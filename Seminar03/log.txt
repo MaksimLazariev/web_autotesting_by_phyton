@@ -1,0 +1,47 @@
+2023-12-17 23:09:56 INFO ====== WebDriver manager ======
+2023-12-17 23:10:00 INFO Get LATEST chromedriver version for google-chrome
+2023-12-17 23:10:00 INFO Get LATEST chromedriver version for google-chrome
+2023-12-17 23:10:00 INFO Driver [C:\Users\Zareff\.wdm\drivers\chromedriver\win64\120.0.6099.71\chromedriver-win32/chromedriver.exe] found in cache
+2023-12-17 23:10:02 INFO Test_02.step_01 started
+2023-12-17 23:10:02 INFO Send test to element //*[@id="login"]/div[1]/label/input
+2023-12-17 23:10:02 INFO Send test to element //*[@id="login"]/div[2]/label/input
+2023-12-17 23:10:02 INFO Click login button
+2023-12-17 23:10:07 INFO We find text 401 in error field //*[@id="app"]/main/div/div/div[2]/h2
+2023-12-17 23:10:14 INFO ====== WebDriver manager ======
+2023-12-17 23:10:17 INFO Get LATEST chromedriver version for google-chrome
+2023-12-17 23:10:18 INFO Get LATEST chromedriver version for google-chrome
+2023-12-17 23:10:18 INFO Driver [C:\Users\Zareff\.wdm\drivers\chromedriver\win64\120.0.6099.71\chromedriver-win32/chromedriver.exe] found in cache
+2023-12-17 23:10:19 INFO Test_02.step_02 started
+2023-12-17 23:10:19 INFO Send Sidor777 to element //*[@id="login"]/div[1]/label/input
+2023-12-17 23:10:20 INFO Send da38ee38c3 to element //*[@id="login"]/div[2]/label/input
+2023-12-17 23:10:20 INFO Click login button
+2023-12-17 23:10:25 INFO We find text Home in error field //*[@id="app"]/main/nav/a/span
+2023-12-17 23:10:31 INFO ====== WebDriver manager ======
+2023-12-17 23:10:35 INFO Get LATEST chromedriver version for google-chrome
+2023-12-17 23:10:35 INFO Get LATEST chromedriver version for google-chrome
+2023-12-17 23:10:35 INFO Driver [C:\Users\Zareff\.wdm\drivers\chromedriver\win64\120.0.6099.71\chromedriver-win32/chromedriver.exe] found in cache
+2023-12-17 23:10:37 INFO Test_02.step_03 started
+2023-12-17 23:10:37 INFO Send Sidor777 to element //*[@id="login"]/div[1]/label/input
+2023-12-17 23:10:37 INFO Send da38ee38c3 to element //*[@id="login"]/div[2]/label/input
+2023-12-17 23:10:37 INFO Click login button
+2023-12-17 23:10:43 INFO Click new post button
+2023-12-17 23:10:43 INFO Send test_title_01 to element //*[@id="create-item"]/div/div/div[1]/div/label/input
+2023-12-17 23:10:43 INFO Send test_description_01 to element //*[@id="create-item"]/div/div/div[2]/div/label/span/textarea
+2023-12-17 23:10:43 INFO Send test_content_01 to element //*[@id="create-item"]/div/div/div[3]/div/label/span/textarea
+2023-12-17 23:10:43 INFO Click new post button
+2023-12-17 23:10:48 INFO We find text test_title_01 in error field h1
+2023-12-17 23:10:54 INFO ====== WebDriver manager ======
+2023-12-17 23:10:58 INFO Get LATEST chromedriver version for google-chrome
+2023-12-17 23:10:59 INFO Get LATEST chromedriver version for google-chrome
+2023-12-17 23:10:59 INFO Driver [C:\Users\Zareff\.wdm\drivers\chromedriver\win64\120.0.6099.71\chromedriver-win32/chromedriver.exe] found in cache
+2023-12-17 23:11:00 INFO Test_02.step_04 started
+2023-12-17 23:11:00 INFO Send Sidor777 to element //*[@id="login"]/div[1]/label/input
+2023-12-17 23:11:01 INFO Send da38ee38c3 to element //*[@id="login"]/div[2]/label/input
+2023-12-17 23:11:01 INFO Click login button
+2023-12-17 23:11:06 INFO Click contact us button
+2023-12-17 23:11:06 INFO Send Sidor777 to element //*[@id="contact"]/div[1]/label/input
+2023-12-17 23:11:06 INFO Send Sidor777@mail.ru to element //*[@id="contact"]/div[2]/label/input
+2023-12-17 23:11:07 INFO Send test_content_01 to element //*[@id="contact"]/div[3]/label/span/textarea
+2023-12-17 23:11:07 INFO Click send contact us button
+2023-12-17 23:11:12 INFO Get alert text
+2023-12-17 23:11:12 INFO Form successfully submitted
