@@ -1,40 +1,32 @@
 import pytest
+import requests
 import yaml
-from module import Site
 
-# with open("selenium/testdata.yaml") as f:
+
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.firefox import GeckoDriverManager
+from email_report import send_email
+
 with open("testdata.yaml") as f:
     testdata = yaml.safe_load(f)
+    browser = testdata["browser"]
 
 
-@pytest.fixture()
-def login_xpath():
-    return """//*[@id="login"]/div[1]/label/input"""
-
-
-@pytest.fixture()
-def password_xpath():
-    return """//*[@id="login"]/div[2]/label/input"""
-
-
-@pytest.fixture()
-def button_xpath():
-    return """//*[@id="login"]/div[3]/button"""
-
-
-@pytest.fixture()
-def error_xpath():
-    return """//*[@id="app"]/main/div/div/div[2]/h2"""
-
-
-@pytest.fixture()
-def error_code():
-    return "401"
-
-
-@pytest.fixture()
-def login_result_xpath():
-    return """//*[@id="app"]/main/nav/a/span"""
+@pytest.fixture(scope="function")
+def browser():
+    driver = None
+    if testdata["browser"] == "firefox":
+        service = Service(executable_path=GeckoDriverManager().install())
+        options = webdriver.FirefoxOptions()
+        driver = webdriver.Firefox(service=service, options=options)
+    elif testdata["browser"] == "chrome":
+        service = Service(executable_path=ChromeDriverManager().install())
+        options = webdriver.ChromeOptions()
+        driver = webdriver.Chrome(service=service, options=options)
+    yield driver
+    driver.quit()
 
 
 @pytest.fixture()
@@ -42,38 +34,40 @@ def login_result():
     return """Home"""
 
 
-@pytest.fixture()
-def create_button_xpath():
-    return """//*[@id="create-btn"]"""
+@pytest.fixture(scope="session")
+def send_report():
+    yield
+    send_email()
 
 
 @pytest.fixture()
-def title_xpath():
-    return """//*[@id="create-item"]/div/div/div[1]/div/label/input"""
+def take_token():
+    result_post = requests.post(url=testdata["login_url"],
+                                data={"username": testdata["login"],
+                                      "password": testdata["password"]})
+    return result_post.json()["token"]
 
 
-@pytest.fixture()
-def description_xpath():
-    return """//*[@id="create-item"]/div/div/div[2]/div/label/span/textarea"""
-
-
-@pytest.fixture()
-def content_xpath():
-    return """//*[@id="create-item"]/div/div/div[3]/div/label/span/textarea"""
-
-
-@pytest.fixture()
-def save_button_xpath():
-    return """//*[@id="create-item"]/div/div/div[7]/div/button"""
-
-
-@pytest.fixture()
-def created_post_title_css():
-    return """h1"""
-
-
-@pytest.fixture()
-def site():
-    browser = Site(testdata["address"])
-    yield browser
-    browser.close()
+# @pytest.fixture()
+# def sort_key():
+#     return "id"
+#
+#
+# @pytest.fixture()
+# def find_key():
+#     return "93049"
+#
+#
+# @pytest.fixture()
+# def title():
+#     return "title01"
+#
+#
+# @pytest.fixture()
+# def description():
+#     return "description01"
+#
+#
+# @pytest.fixture()
+# def content():
+#     return "content01"

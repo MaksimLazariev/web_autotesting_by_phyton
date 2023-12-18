@@ -1,0 +1,25 @@
+2023-12-18 19:28:11 INFO ====== WebDriver manager ======
+2023-12-18 19:28:14 INFO Get LATEST chromedriver version for google-chrome
+2023-12-18 19:28:15 INFO Get LATEST chromedriver version for google-chrome
+2023-12-18 19:28:15 INFO Driver [C:\Users\Zareff\.wdm\drivers\chromedriver\win64\120.0.6099.71\chromedriver-win32/chromedriver.exe] found in cache
+2023-12-18 19:28:16 INFO Test_02.step_01 started
+2023-12-18 19:28:28 INFO ====== WebDriver manager ======
+2023-12-18 19:28:33 INFO Get LATEST chromedriver version for google-chrome
+2023-12-18 19:28:33 INFO Get LATEST chromedriver version for google-chrome
+2023-12-18 19:28:33 INFO Driver [C:\Users\Zareff\.wdm\drivers\chromedriver\win64\120.0.6099.71\chromedriver-win32/chromedriver.exe] found in cache
+2023-12-18 19:28:35 INFO Test_02.step_02 started
+2023-12-18 19:28:48 INFO ====== WebDriver manager ======
+2023-12-18 19:28:51 INFO Get LATEST chromedriver version for google-chrome
+2023-12-18 19:28:52 INFO Get LATEST chromedriver version for google-chrome
+2023-12-18 19:28:52 INFO Driver [C:\Users\Zareff\.wdm\drivers\chromedriver\win64\120.0.6099.71\chromedriver-win32/chromedriver.exe] found in cache
+2023-12-18 19:28:53 INFO Test_02.step_03 started
+2023-12-18 19:29:11 INFO ====== WebDriver manager ======
+2023-12-18 19:29:15 INFO Get LATEST chromedriver version for google-chrome
+2023-12-18 19:29:15 INFO Get LATEST chromedriver version for google-chrome
+2023-12-18 19:29:15 INFO Driver [C:\Users\Zareff\.wdm\drivers\chromedriver\win64\120.0.6099.71\chromedriver-win32/chromedriver.exe] found in cache
+2023-12-18 19:29:17 INFO Test_02.step_04 started
+2023-12-18 19:29:35 INFO Test_02.step_05 started
+2023-12-18 19:29:35 WARNING Forcing soap:address location to HTTPS
+2023-12-18 19:29:35 WARNING Forcing soap:address location to HTTPS
+2023-12-18 19:29:36 INFO Test_02.step_06 started
+2023-12-18 19:29:37 INFO Test_02.step_07 started

@@ -1,9 +1,24 @@
 address: https://test-stand.gb.ru
+wsdl : "https://speller.yandex.net/services/spellservice?WSDL"
+
 browser: chrome
-sleep_time: 3
+sleep_time: 5
 login: "Sidor777"
 password: "da38ee38c3"
 
 title:  "test_title_01"
 description:  "test_description_01"
 content:  "test_content_01"
+
+e-mail: "Sidor777@mail.ru"
+
+login_url: "https://test-stand.gb.ru/gateway/login"
+get_url: "https://test-stand.gb.ru/api/posts"
+login_site: "kitty89"
+password_site: "61d96a3985"
+
+bad_word: "sleap"
+good_word: "sleep"
+
+sort_key: "id"
+find_key: "93049"
